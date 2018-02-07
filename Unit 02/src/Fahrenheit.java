@@ -23,8 +23,6 @@ public class Fahrenheit
 	public void print()
 	{
 		//this is part of the solution
-		Fahrenheit test = new Fahrenheit();
-		test.getCelsius();
-		System.out.printf("%.2f degrees Fahrenheit == %.2f degrees Celsius\n\n\n", fahrenheit, celsius);
+		System.out.println(getCelsius());
 	}
 }
