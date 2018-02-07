@@ -11,13 +11,16 @@ public class Circle
 
 	public void setRadius(double rad)
 	{
+	radius = rad;
 	}
 
-	public void calculateArea( )
+	public void calculateArea()
 	{
+	area = Math.PI*radius*radius;
 	}
 
-	public void print( )
+	public void print()
 	{
+	System.out.printf("The area is :: %.4f\n\n\n", area);
 	}
 }
