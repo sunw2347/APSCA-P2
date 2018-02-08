@@ -14,6 +14,7 @@ public class Lab03c
    {
    	//add test cases
 		Scanner keyboard = new Scanner(System.in);
+		Quadratic test = new Quadratic ();
 		System.out.println("Enter a :: \n");
 		int a = keyboard.nextInt();
 		System.out.println("Enter b :: \n");
@@ -21,7 +22,8 @@ public class Lab03c
 		System.out.println("Enter c :: \n");
 		int c = keyboard.nextInt();
 		
-		Quadratic test = new Quadratic (a, b, c);
+		
+		test.setEquation(a, b, c);
 		test.calcRoots();
 		test.print();
 		

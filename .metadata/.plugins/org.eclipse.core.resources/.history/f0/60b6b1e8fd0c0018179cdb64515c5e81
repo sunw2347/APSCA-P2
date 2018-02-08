@@ -32,7 +32,6 @@ public class Lab03c
 		System.out.println("Enter c :: \n");
 		c = keyboard.nextInt();
 		
-		test.setEquation(a, b, c);
 		test.calcRoots();
 		test.print();
 		
@@ -43,7 +42,6 @@ public class Lab03c
 		System.out.println("Enter c :: \n");
 		c = keyboard.nextInt();
 		
-		test.setEquation(a, b, c);
 		test.calcRoots();
 		test.print();
 		

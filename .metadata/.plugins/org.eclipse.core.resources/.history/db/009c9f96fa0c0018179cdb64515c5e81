@@ -21,7 +21,8 @@ public class Lab03c
 		System.out.println("Enter c :: \n");
 		int c = keyboard.nextInt();
 		
-		Quadratic test = new Quadratic (a, b, c);
+		Quadratic test = new Quadratic ();
+		test.setEquation(a, b, c);
 		test.calcRoots();
 		test.print();
 		
