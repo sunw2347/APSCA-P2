@@ -28,7 +28,7 @@ public class StringChecker
 
 	public boolean findLetter(char c)
 	{
-		if (word.contains("c") || word.contains("g") || word.contains("U")) {
+		if (word.contains("c")) {
 			return true;
 		}
 
