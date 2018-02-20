@@ -48,7 +48,7 @@ public class CharacterAnalyzer
 
 	public boolean isLower( )
 	{
-		if(theChar == Character.toLowerCase(theChar)&& theChar!='3')
+		if(theChar == Character.toLowerCase(theChar))
 		{
 			return true;
 		}

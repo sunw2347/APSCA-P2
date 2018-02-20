@@ -57,10 +57,10 @@ public class LoopStats
 
 	public int getTotal()
 	{
-		int total = 0;
+		int total=0;
 		for(int i = start; i < stop; i++)
 		{
-			total += i;
+			total = i + total;
 		}
 		return total;
 	}
