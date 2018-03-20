@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -17,12 +17,19 @@ public class Word1 implements Comparable<Word1>
 
 	public int compareTo(Word1 rhs)
 	{
-		if(equals(rhs))return 0;
-		if(()>rhs.numVowels()) return 1;
-		else
-		return -1;
-		
-		
+		if(word.length() > rhs.toString().length()){
+			return 1;
+		}
+		if(word.length() < rhs.toString().length()){
+			return -1;
+		}
+		else{
+			if(word.charAt(0) > rhs.toString().charAt(0)){
+				return 1;
+			}
+			if(word.charAt(0) < rhs.toString().charAt(0)){
+				return -1;		
+			}
 		return 0;
 	}
 

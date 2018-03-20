@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -29,10 +29,12 @@ public class Word2 implements Comparable<Word2>
 
 	public int compareTo(Word2 rhs)
 	{
-		if(equals(rhs))return 0;
 		if(numVowels()>rhs.numVowels()) return 1;
+		if(numVowels()<rhs.numVowels()) return -1;
 		else
-		return -1;
+			if(word.compareTo(rhs.toString()) > 0) return 1;
+			else if(word.compareTo(rhs.toString()) < 0) return -1;
+	return 0;
 	}
 
 	public String toString()
