@@ -30,7 +30,8 @@ public class Word1 implements Comparable<Word1>
 			if(word.charAt(0) < rhs.toString().charAt(0)){
 				return -1;		
 			}
-		return 0;
+		}
+	return 0;
 	}
 
 	public String toString()
