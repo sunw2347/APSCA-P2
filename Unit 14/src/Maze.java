@@ -25,10 +25,10 @@ public class Maze
 
 	}
 
-	public boolean hasExitPath(int r, int c)
+	public void hasExitPath(int r, int c)
 	{
 
-		return false;
+
 	}
 
 	public String toString()
