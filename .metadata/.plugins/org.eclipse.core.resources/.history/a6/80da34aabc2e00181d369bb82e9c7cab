@@ -51,16 +51,9 @@ public class ElevensBoard extends Board {
 	 * @return true if the selected cards form a valid group for removal;
 	 *         false otherwise.
 	 */
-	public void printName() {
-		System.out.println("William Sun, Period 2, 3/23/2018, Computer 05");
+	public String printName() {
+		return "William Sun, Period 2, 3/23/2018, 05";
 	}
-	/*
-	 * *****IMPLEMENT THIS CODE IN "ELEVENSGUIRUNNER.JAVA"
-	 * 		ElevensBoard test = new ElevensBoard();
-	 *		test.printName();
-	 * 
-	 * */
-	
 	
 	@Override
 	public boolean isLegal(List<Integer> selectedCards) {
