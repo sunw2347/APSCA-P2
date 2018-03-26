@@ -13,16 +13,13 @@ public class Lab24b
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Scanner file = new Scanner(new File ("lab24b.dat"));
+		Scanner file = new Scanner(new File ("C:\\Users\\sunw2347\\Desktop\\Unit\\Unit14\\Unit14-Assignments\\lab24b.dat"));
 		int size = file.nextInt();
 		file.nextLine();
 		for(int i = 0; i<size; i++)
 		{
-			String word = file.next();
-
-
-
-
+			FancyWord test = new FancyWord(file.nextLine());
+			System.out.println(test);
 	   }
 	}
 }
