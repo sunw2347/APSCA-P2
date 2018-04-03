@@ -38,12 +38,12 @@ public class Pong extends Canvas implements KeyListener, Runnable
 		
 		
 		//instantiate a left Paddle
-		leftPaddle = new Paddle(25, 200, 20, 100, Color.BLACK, 5);
+		leftPaddle = new Paddle(25, 200, 10, 100, Color.BLACK, 5);
 		
 		
 		
 		//instantiate a right Paddle
-		rightPaddle = new Paddle(755,200, 20, 100, Color.BLACK, 5);
+		rightPaddle = new Paddle(755,200, 10, 100, Color.BLACK, 5);
 		
 
 
