@@ -19,6 +19,7 @@ public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
 {
 	private Ball ball;
 	private Paddle leftPaddle;
+	private Paddle rightPaddle;
 	private boolean[] keys;		//keeps track of what keys are pressed
 
 	public PaddleTestTwo()
@@ -27,20 +28,15 @@ public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
 
 
 		//instantiate a Ball
-		
-		
+		ball = new Ball(100,100,25,25,Color.CYAN,2,2);
 		
 		//instantiate a left Paddle
-		
-		
-		
+		leftPaddle = new Paddle(20,100,30,75,Color.RED,5);
 		
 		//instantiate a right Paddle
+		rightPaddle = new Paddle(730,100,30,75,Color.RED,5);
 		
 		
-		
-
-
 		keys = new boolean[5];
 
 
@@ -61,13 +57,14 @@ public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
 	{
 		ball.moveAndDraw(window);
 		leftPaddle.draw(window);
+		rightPaddle.draw(window);
 
-		if(!(ball.getX()>=10 && ball.getX()<=550))
+		if(!(ball.getX()>=10 && ball.getX()<=750))
 		{
 			ball.setXSpeed(-ball.getXSpeed());
 		}
 
-		if(!(ball.getY()>=10 && ball.getY()<=450))
+		if(!(ball.getY()>=10 && ball.getY()<=530))
 		{
 			ball.setYSpeed(-ball.getYSpeed());
 		}
@@ -80,16 +77,42 @@ public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
 		if(keys[1] == true)
 		{
 			//move left paddle down and draw it on the window
-
+			leftPaddle.moveDownAndDraw(window);
 
 		}
 		if(keys[2] == true)
 		{
-
+			//move right paddle up and draw it on the window
+			rightPaddle.moveUpAndDraw(window);
 		}
 		if(keys[3] == true)
 		{
-
+			//move right paddle down and draw it on the window
+			rightPaddle.moveDownAndDraw(window);
+		}
+		if((ball.getX()<=leftPaddle.getX()+leftPaddle.getWidth()+Math.abs(ball.getXSpeed()))
+				&&(ball.getY()>=leftPaddle.getY()
+				&&(ball.getY()<=leftPaddle.getY()+leftPaddle.getHeight())
+				||(ball.getY()+ball.getHeight()>=leftPaddle.getY())
+				&&(ball.getY()+ball.getHeight()<leftPaddle.getY()+leftPaddle.getHeight())))
+		{
+			if(ball.getX()<=leftPaddle.getX()+leftPaddle.getWidth()-Math.abs(ball.getXSpeed())){
+				ball.setYSpeed(-ball.getYSpeed());
+			}
+			else
+				ball.setXSpeed(-ball.getXSpeed());
+		}
+		if((ball.getX()>=rightPaddle.getX()-rightPaddle.getWidth()-Math.abs(ball.getXSpeed()))
+				&&(ball.getY()>=rightPaddle.getY()//changing here!
+				&&(ball.getY()<=rightPaddle.getY()+rightPaddle.getHeight())
+				||(ball.getY()+ball.getHeight()>=rightPaddle.getY())
+				&&(ball.getY()+ball.getHeight()<rightPaddle.getY()+rightPaddle.getHeight())))
+		{
+			if(ball.getX()>=rightPaddle.getX()-rightPaddle.getWidth()+Math.abs(ball.getXSpeed())){
+				ball.setYSpeed(-ball.getYSpeed());
+			}
+			else
+				ball.setXSpeed(-ball.getXSpeed());
 		}
 	}
 
@@ -132,5 +155,5 @@ public class PaddleTestTwo extends Canvas implements KeyListener, Runnable
       }catch(Exception e)
       {
       }
-  	}		
+  	}	
 }

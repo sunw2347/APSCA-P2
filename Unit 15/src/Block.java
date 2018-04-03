@@ -13,105 +13,113 @@ public class Block implements Locatable
 	private int yPos;
 	private int width;
 	private int height;
+
 	private Color color;
 
-	public Block(){
-		xPos = 100;
-		yPos = 150;
-		width = 10;
-		height = 10;
-		color = Color.BLACK;
+	public Block()
+	{
+		xPos=100;
+		yPos=150;
+		width=10;
+		height=10;
+		color=Color.BLACK;
+
 	}
+
 	//add other Block constructors - x , y , width, height, color
-	public Block(int x,int y){
-		xPos = x;
-		yPos = y;
-		color = Color.BLACK;
+	public Block(int x, int y){
+		this();
+		xPos=x;
+		yPos=y;
+		
 	}
-	public Block(int x,int y,int w){
-		xPos = x;
-		yPos = y;
-		width = w;
-	}
-	public Block(int x,int y,int w,int h){
-		xPos = x;
-		yPos = y;
-		width = w;
-		height = h;
-		color = Color.BLACK;
-	}
-	public Block(int x, int y, int w, int h, Color c){
-		xPos = x;
-		yPos = y;
-		width = w;
-		height = h;
-		color = c;
-	}
-	public void setPos( int x, int y){
-		xPos = x;
-		yPos = y;
-	}
-    public void setX( int x ){
-    	xPos = x;
-    }
-    public void setY( int y ){
-    	yPos = y;
-    }
-
-    public int getX(){
-    	return xPos;
-    }
-    public int getY(){
-    	return yPos;
-    }
+	public Block(int x, int y, int w, int h){
+		this();
+		xPos=x;
+		yPos=y;
+		width=w;
+		height=h;
 	
-    public void setWidth(int w){
-    	width = w;
-    }
-    public int getWidth(){
-    	return width;
-    }
-    public void setHeight(int h){
-    	height = h;
-    }
-    public int getHeight(){
-    	return height;
-    }
-    public void setColor(Color col){
-    	color = col;
-    }
-    public Color getColor(){
-    	return color;
-    }
+	}
+	public Block(int x, int y, int w, int h, Color col){
+		this();
+		xPos=x;
+		yPos=y;
+		width=w;
+		height=h;
+		color= col;
+	
+	}
+	//add the other set methods
+	public void setPos(int x, int y){
+		xPos=x;
+		yPos=y;
+	}
+	   
+	public void setX(int x){
+		xPos=x;
+	}
+	public void setY(int y){
+		yPos=y;
+	}
+	public void setWidth(int w){
+		width=w;
+	}
+	public void setHeight(int h){
+		height=h;
+	}
 
-    public void draw(Graphics window){
-    	window.setColor(color);
-    	window.fillRect(getX(), getY(), getWidth(), getHeight());
-    }
+   public void setColor(Color col)
+   {
+	   color=col;
 
-    public void draw(Graphics window, Color col)
-    {
-    	color = col;
-    	window.setColor(color);
-    	window.fillRect(getX(), getY(), getWidth(), getHeight());
-    }
-    public void remove(Graphics window){
-    	window.setColor(Color.WHITE);
-    	window.fillRect(getX(), getY(), getWidth(), getHeight());
-    }
+   }
+   //add the other get methods
+   public int getX(){
+	   return xPos;
+   }
+   public int getY(){
+	   return yPos;
+   }
+   public int getHeight(){
+	   return height;
+   }
+   public int getWidth(){
+	   return width;
+   }
+   public Color getColor(){
+	   return color;
+   }
+
+   public void draw(Graphics window)
+   {
+   	//uncomment after you write the set and get methods
+      window.setColor(color);
+      window.fillRect(getX(), getY(), getWidth(), getHeight());
+   }
+
+   public void draw(Graphics window, Color col)
+   {
+	   window.setColor(col);
+	   window.fillRect(getX(), getY(), getWidth(), getHeight());
+
+   }
+   
+	public boolean equals(Object obj)
+	{
+		Block ob = (Block) obj;
+		if (ob.getX()==getX()&&ob.getY()==getY()&&ob.getHeight()==getHeight()&&ob.getWidth()==getWidth()&&ob.getColor()==getColor()){
+			return true;
+		}
+
+		return false;
+	}   
+
     
-    
- 	public boolean equals(Object obj){
- 		Block b = (Block)obj;
- 		if(getX() == b.getX() && getY() == b.getY() && getWidth() == b.getWidth() && getHeight() == getHeight() && getColor() == b.getColor())
- 			return true;
- 		else		
- 			return false;
- 	}   
- 	
-    //add a toString() method  - x , y , width, height, color
- 	public String toString(){
- 		String output = getX() + " " + getY() + " " + getWidth() + " " + getHeight() + " " + getColor();
- 		return output;
- 	}
+
+   //add a toString() method  - x , y , width, height, color
+	public String toString(){
+		return "x: "+getX()+" y: "+getY()+" width: "+getWidth()+" height: "+getHeight()+" color: "+getColor();
+	}
+
 }

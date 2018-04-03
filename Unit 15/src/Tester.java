@@ -17,14 +17,30 @@ public class Tester extends JFrame
 		super("PONG TESTER");
 		setSize(WIDTH,HEIGHT);
 		
-		getContentPane().add(new BlockTestTwo());		
+		//getContentPane().add(new BlockTestTwo());		
 		
 		//uncomment when you are ready to test the Ball
-		//getContentPane().add(new BallTestTwo());		
+		//getContentPane().add(new BallTestTwo());
 		
-		//PaddleTestTwo padTest = new PaddleTestTwo();
-		//((Component)padTest).setFocusable(true);			
-		//getContentPane().add(padTest);
+//		PaddleTestTwo padTest = new PaddleTestTwo();
+//		((Component)padTest).setFocusable(true);			
+//		getContentPane().add(new PaddleTestTwo());//padTest);
+		
+		//uncomment to test pong
+		Pong pong = new Pong();
+		((Component)pong).setFocusable(true);			
+		getContentPane().add(pong);
+		
+		//uncomment to test breakout
+		//BreakOut bo = new BreakOut();
+		//((Component)bo).setFocusable(true);			
+		//getContentPane().add(bo);
+		
+		//uncomment to test airhockey
+		//AirHockey ah = new AirHockey();
+		//((Component)ah).setFocusable(true);	
+		//getContentPane().add(ah);
+		
 				
 		setVisible(true);
 	}
