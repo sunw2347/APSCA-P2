@@ -3,6 +3,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.image.*;
+import java.util.Scanner;
+
 import javax.swing.border.*;
 /**
  * Displays a picture and lets you explore the picture by displaying the row, column, red,
@@ -800,7 +802,8 @@ public class PictureExplorer implements MouseMotionListener, ActionListener, Mou
    */
   public static void main( String args[])
   {
-    Picture pix = new Picture("beach.jpg");
+
+    Picture pix = new Picture("C:\\Users\\sunw2347\\Desktop\\APSCA-P2\\Picture Lab\\images\\beach.jpg");
     pix.explore();
   }
   
