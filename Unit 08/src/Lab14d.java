@@ -3,6 +3,9 @@
 //Date -
 //Class -
 //Lab  -
+import java.lang.System;
+import java.lang.Math;
+import java.util.Scanner;
 
 public class Lab14d
 {

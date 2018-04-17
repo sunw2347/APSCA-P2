@@ -14,24 +14,24 @@ public class CardTester {
 		Card card3 = new Card("ace","hearts", 1);
 		
 		//card x
-		System.out.println(x.suit());
-		System.out.println(x.rank());
-		System.out.println(x.pointValue());
-		System.out.println(x.matches(z));
-		System.out.println(x);
+		System.out.println(card1.suit());
+		System.out.println(card1.rank());
+		System.out.println(card1.pointValue());
+		System.out.println(card1.matches(card3));
+		System.out.println(card1);
 
 		//card y
-		System.out.println(y.suit());
-		System.out.println(y.rank());
-		System.out.println(y.pointValue());
-		System.out.println(y.matches(z));
-		System.out.println(y);
+		System.out.println(card2.suit());
+		System.out.println(card2.rank());
+		System.out.println(card2.pointValue());
+		System.out.println(card2.matches(card3));
+		System.out.println(card2);
 
 		//card z
-		System.out.println(z.suit());
-		System.out.println(z.rank());
-		System.out.println(z.pointValue());
-		System.out.println(z.matches(x));
-		System.out.println(z);
+		System.out.println(card3.suit());
+		System.out.println(card3.rank());
+		System.out.println(card3.pointValue());
+		System.out.println(card3.matches(card1));
+		System.out.println(card3);
 	}
 }
