@@ -21,6 +21,6 @@ public class Lab16e
 		out.println("Letter occurring most : " + test.mostFrequent());
 		out.println("Letter occurring least : " + test.leastFrequent());
 		out.println(test);
-		//more test cases
+
 	}
 }

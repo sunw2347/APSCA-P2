@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -12,7 +12,11 @@ public class Lab09f
 	{
 		//add test cases
 		
-		
+		test.setNums(5, 15);
+		test.getEvenCount();
+		test.getOddCount();
+		test.getTotal();
+		test.toString();
 											
 	}
 }

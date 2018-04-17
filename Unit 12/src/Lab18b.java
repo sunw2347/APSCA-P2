@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,6 +10,7 @@ public class Lab18b
 {
    public static void main( String args[] )
    {
+		//test cases
 		Monster zero = new Monster();
 		Monster one = new Monster(8);
 		Monster sue = new Monster(9, 4);

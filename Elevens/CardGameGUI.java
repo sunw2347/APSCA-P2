@@ -188,8 +188,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
 		for (int k = 0; k < board.size(); k++) {
 			displayCards[k] = new JLabel();
 			panel.add(displayCards[k]);
-			displayCards[k].setBounds(cardCoords[k].x, cardCoords[k].y,
-										CARD_WIDTH, CARD_HEIGHT);
+			displayCards[k].setBounds(cardCoords[k].x, cardCoords[k].y, CARD_WIDTH, CARD_HEIGHT);
 			displayCards[k].addMouseListener(new MyMouseListener());
 			selections[k] = false;
 		}

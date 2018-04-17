@@ -16,12 +16,12 @@ public class Card {
 	private String rank;
 
 	/**
-	 * integer value that holds the point value.
+	 * int value that holds the point value.
 	 */
 	private int pointValue;
 
 
-   /**
+  /**
 	 * Creates a new <code>Card</code> instance.
 	 *
 	 * @param cardRank  a <code>String</code> value
@@ -33,10 +33,11 @@ public class Card {
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		rank = cardRank;
-		suit = cardSuit;
-		pointValue = cardPointValue;
+		suit=cardSuit;
+		rank=cardRank;
+		pointValue=cardPointValue;
 	}
+
 
 	/**
 	 * Accesses this <code>Card's</code> suit.
@@ -44,8 +45,8 @@ public class Card {
 	 */
 	public String suit() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	return suit;
-	}
+		return suit;
+  }
 
 	/**
 	 * Accesses this <code>Card's</code> rank.
@@ -53,16 +54,16 @@ public class Card {
 	 */
 	public String rank() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	return rank;
+		return rank;
 	}
 
-   /**
+  /**
 	 * Accesses this <code>Card's</code> point value.
 	 * @return this <code>Card's</code> point value.
 	 */
 	public int pointValue() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	return pointValue;
+		return pointValue;
 	}
 
 	/** Compare this card with the argument.
@@ -73,7 +74,10 @@ public class Card {
 	 */
 	public boolean matches(Card otherCard) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	return (this.pointValue() == otherCard.pointValue() && this.rank.equals(otherCard.rank()) && this.suit.equals(otherCard.suit()));
+		if (this.suit().equals(otherCard.suit())&&(this.rank().equals(otherCard.rank())&&this.pointValue()==otherCard.pointValue())){
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -89,6 +93,7 @@ public class Card {
 	@Override
 	public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		return rank + " of " + suit + " (point value = " + pointValue + ")";
+		String output=""+this.rank()+" of "+this.suit()+" (point value = "+this.pointValue()+") ";
+		return output;
 	}
 }

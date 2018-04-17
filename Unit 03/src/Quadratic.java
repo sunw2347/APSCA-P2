@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -39,8 +39,8 @@ public class Quadratic
 
 	public void calcRoots( )
 	{
-		rootOne = (-b + Math.sqrt((b*b)-4*a*c))/2*a;
-		rootTwo = (-b - Math.sqrt((b*b)-4*a*c))/2*a;
+		rootOne = ((-b + Math.sqrt((b*b)-4*a*c))/2*a);
+		rootTwo = ((-b - Math.sqrt((b*b)-4*a*c))/2*a);
 	}
 
 	public void print( )

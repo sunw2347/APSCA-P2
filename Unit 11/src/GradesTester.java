@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,6 +13,7 @@ public class GradesTester
 {
    public static void main( String args[] )
    {
+		//test cases
 		Grades test = new Grades("5 - 90 85 95.5 77.5 88");
 		out.println(test);
 		out.println("sum = " + test.getSum());	

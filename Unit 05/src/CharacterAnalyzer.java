@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class CharacterAnalyzer
 {
-	private char theChar;
+	private char theChar; //instantiation
 
 	public CharacterAnalyzer()
 	{

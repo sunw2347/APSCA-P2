@@ -13,7 +13,7 @@ import static java.lang.System.*;
 
 public class Histogram
 {
-	private ArrayList<Integer> count;
+	private ArrayList<Integer> count; //arraylist
 	private ArrayList<Character> letters;
 	private String fileName;
 

@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -8,7 +8,7 @@ import static java.lang.System.*;
 
 public class Name
 {
-	private String name;
+	private String name; //instantiation
 	private String last;
 
 	public Name()

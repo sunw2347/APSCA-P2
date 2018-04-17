@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -30,7 +30,7 @@ public class Slope
 	public void print( )
 	{
 
-		System.out.printf("the slope is %.2f\n\n\n", slope);
+		System.out.printf("the slope is %.2f\n\n", slope);
 
 	}
 }

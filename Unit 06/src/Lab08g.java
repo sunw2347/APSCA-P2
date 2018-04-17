@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -30,6 +30,11 @@ public class Lab08g
 		test.getTotal();
 		test.toString();
 		
+		test.setNums(4, 2);
+		test.getEvenCount();
+		test.getOddCount();
+		test.getTotal();
+		test.toString();
 		
 		
 					

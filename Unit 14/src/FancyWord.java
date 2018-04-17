@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class - 
@@ -13,7 +13,7 @@ public class FancyWord
 
 	public FancyWord()
 	{
-
+	//constructors
 	}
 
    public FancyWord(String s)

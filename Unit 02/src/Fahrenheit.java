@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -6,11 +6,11 @@
 
 public class Fahrenheit
 {
-	private double fahrenheit;
+	private double fahrenheit;//instantiation
 
 	public void setFahrenheit(double fahren)
 	{
-	 fahrenheit = fahren;
+	 fahrenheit = fahren; 
 	}
 
 	public double getCelsius()

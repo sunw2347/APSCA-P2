@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -16,12 +16,6 @@ public class GradeBookRunner
 		out.println("Welcome to the Class Stats program!");
 		
 		Scanner keyboard = new Scanner(System.in);
-
-
-
-
-
-
 
 
 

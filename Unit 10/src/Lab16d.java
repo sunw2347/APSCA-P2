@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,7 +10,7 @@ public class Lab16d
 {
 	public static void main( String args[] )
 	{
-		//make a new MadLib
+		//new MadLib
 		MadLib run = new MadLib();
 		run.getRandomVerb();
 		run.getRandomNoun();

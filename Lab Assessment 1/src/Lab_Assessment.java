@@ -3,7 +3,7 @@ import static java.lang.System.*;
 public class Lab_Assessment{
 
 	public static void main( String args[] ){
-		System.out.println(isGoofy(12));
+		System.out.println(isGoofy(12)); //test
 		System.out.println(isGoofy(15));
 		System.out.println(isGoofy(17));
 		System.out.println(isGoofy(11));

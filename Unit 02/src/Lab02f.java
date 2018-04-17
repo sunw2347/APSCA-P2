@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -26,7 +26,7 @@ public class Lab02f
 		test.calculateSlope();
 		test.print();
 
-		test.Line(1, 1, 2, 9);
+		test.Line(1, 0, 2, 9);
 		test.calculateSlope();
 		test.print();
 		

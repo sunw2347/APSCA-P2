@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,7 +11,7 @@ import static java.util.Arrays.*;
 
 public class Student implements Comparable<Student>
 {
-	private String myName;
+	private String myName; //instantiation
 	private Grades myGrades;
 	
 	public Student()

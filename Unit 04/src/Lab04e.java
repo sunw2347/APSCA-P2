@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,6 +10,7 @@ public class Lab04e
 {
 	public static void main ( String[] args )
 	{
+		//add test cases
 		StringChecker demo = new StringChecker("chicken");
 		out.println("looking for c "+demo.findLetter('c'));
 		out.println("looking for ch "+demo.findSubString("ch"));

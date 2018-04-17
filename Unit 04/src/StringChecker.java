@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -43,9 +43,9 @@ public class StringChecker
 			return true;
 		}
 
-	else{
+		else{
 		return false;
-	}
+		}
 	}
 
  	public String toString()

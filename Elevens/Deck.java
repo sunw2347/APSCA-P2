@@ -11,7 +11,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<Card> cards;
+	private List<Card> cards; //instantiation
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -19,8 +19,6 @@ public class Deck {
 	 * The next card to be dealt is at size - 1.
 	 */
 	private int size;
-
-
 	/**
 	 * Creates a new <code>Deck</code> instance.<BR>
 	 * It pairs each element of ranks with each element of suits,

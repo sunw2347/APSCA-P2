@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -7,7 +7,7 @@
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
-
+//Unit 01
 class Robot extends Canvas
 {
    public Robot()    //constructor method - sets up the class

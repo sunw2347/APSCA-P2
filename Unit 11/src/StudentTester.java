@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,7 +13,7 @@ public class StudentTester
 {
    public static void main( String args[] )
    {
-		Student stu = new Student("Billy Bob","5 - 90 85 95.5 77.5 88");
+		Student stu = new Student("Billy Bobby","5 - 90 85 95.5 77.5 88");
 		out.println(stu);
 		out.println("sum = " + stu.getSum());		
 		out.println("average = " + stu.getAverage());	

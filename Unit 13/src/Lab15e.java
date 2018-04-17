@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,15 +11,14 @@ public class Lab15e
 {
 	public static void main(String args[])
 	{
-		//test case 1
+		//test cases
 		int[] one = NumberSort.getSortedDigitArray(567891);
 		for(int item : one)
 		{
 			System.out.print(item + " ");
 		}
 		System.out.println();
-		
-		//test case 2	
+			
 		int[] two = NumberSort.getSortedDigitArray(12285891);
 		for(int item : two)
 		{
@@ -27,9 +26,6 @@ public class Lab15e
 		}
 		System.out.println();
 	
-			
-
-		//test case 3
 		
 		int[] three = NumberSort.getSortedDigitArray(19294890);
 		for(int item : three)
@@ -37,14 +33,6 @@ public class Lab15e
 			System.out.print(item + " ");
 		}
 		System.out.println();
-	
-		
-	
-	
-	
-	
-	
-	
 		
 		
 		

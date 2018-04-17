@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,10 +11,9 @@ import java.util.Random;
 class BlinkyBall extends Ball
 {
 
-   //constructors
    public BlinkyBall()
    {
-		super();
+		super(); //constructor
    }
 
    public BlinkyBall(int x, int y)

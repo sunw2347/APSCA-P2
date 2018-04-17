@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -12,7 +12,7 @@ import static java.util.Arrays.*;
 import java.util.ArrayList;
 public class Class
 {
-	private String names;
+	private String names; //instantiation
 	private ArrayList<Student> studentList;
 	
 	public Class()

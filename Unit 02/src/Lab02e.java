@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -22,7 +22,7 @@ public class Lab02e
 	test.calculateArea();
 	test.print();
 
-	test.setRadius(55);	
+	test.setRadius(50);	
 	test.calculateArea();
 	test.print();
 

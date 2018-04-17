@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,7 +11,7 @@ import static java.util.Arrays.*;
 import java.util.ArrayList;
 public class Grades
 {
-	private ArrayList<Double> grades;
+	private ArrayList<Double> grades; //instantiation
 	
 	public Grades()
 	{

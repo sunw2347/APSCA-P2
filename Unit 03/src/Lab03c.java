@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -12,7 +12,7 @@ public class Lab03c
 {
 	public static void main( String[] args )
    {
-   	//add test cases
+   	//test cases
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Enter a :: \n");
 		int a = keyboard.nextInt();

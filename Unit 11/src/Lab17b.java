@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class - 
@@ -21,11 +21,6 @@ public class Lab17b
  			int times = keyboard.nextInt();
  			WordPrinter test = new WordPrinter();
  			test.printWord(word, times);
-
-			
-			
-			//call the printWord method
-
 
 
 			System.out.print("\nDo you want to enter more sample input? ");

@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -11,7 +11,7 @@ public class Lab08i
 {
 	public static void main ( String[] args )
 	{
-		//add test cases
+		//test cases
 		Prime test = new Prime();
 		test.setPrime(24);
 		test.isPrime();

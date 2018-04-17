@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -15,6 +15,7 @@ public class GradeBookFileRunner
 {
    public static void main( String args[] ) throws Exception
    {
+		//test cases
 		out.println("Class Stats program\n\n");
 		Scanner file = new Scanner(new File("C:\\Users\\sunw2347\\Documents\\GitHub\\APCSA-P2\\Unit11\\src\\Gradebook.dat"));
 		String name = file.nextLine();

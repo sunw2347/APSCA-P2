@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -21,6 +21,6 @@ public class Circle
 
 	public void print()
 	{
-	System.out.printf("The area is :: %.4f\n\n\n", area);
+	System.out.printf("The area is :: %.4f\n\n", area);
 	}
 }

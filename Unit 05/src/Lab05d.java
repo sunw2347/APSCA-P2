@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -16,8 +16,8 @@ public class Lab05d
 		char letter = keyboard.next().charAt(0);
 		CharacterAnalyzer test = new CharacterAnalyzer(letter);
 		out.println(test);
-		//A
-		//add more test cases
+
+		//more test cases
 		
 		out.print("Enter a letter :: ");
 		letter = keyboard.next().charAt(0);

@@ -9,12 +9,8 @@ public class Shuffler {
 	 * The number of consecutive shuffle steps to be performed in each call
 	 * to each sorting procedure.
 	 */
-	private static final int SHUFFLE_COUNT = 8;
+	private static final int SHUFFLE_COUNT = 3;
 
-	/**
-	 * The number of values to shuffle.
-	 */
-	private static final int VALUE_COUNT = 52;
 
 	/**
 	 * Tests shuffling methods.
@@ -23,10 +19,7 @@ public class Shuffler {
 	public static void main(String[] args) {
 		System.out.println("Results of " + SHUFFLE_COUNT +
 								 " consecutive perfect shuffles:");
-		int[] values1 = new int[VALUE_COUNT];
-		for (int i = 0; i < values1.length; i++) {
-			values1[i] = i;
-			}
+		int[] values1 = {0, 1, 2, 3, 4};
 		for (int j = 1; j <= SHUFFLE_COUNT; j++) {
 			perfectShuffle(values1);
 			System.out.print("  " + j + ":");
@@ -39,10 +32,7 @@ public class Shuffler {
 
 		System.out.println("Results of " + SHUFFLE_COUNT +
 								 " consecutive efficient selection shuffles:");
-		int[] values2 = new int[VALUE_COUNT];
-		for (int i = 0; i < values2.length; i++) {
-			values2[i] = i;
-			}
+		int[] values2 = {0, 1, 2, 3, 4};
 		for (int j = 1; j <= SHUFFLE_COUNT; j++) {
 			selectionShuffle(values2);
 			System.out.print("  " + j + ":");
@@ -63,17 +53,19 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
-		int []sh = new int[values.length];
-		int startleft = 0;
-		int startright = values.length / 2;
-		for (int i = 0; i < values.length; i += 2) {
-			sh[i] = values[startleft];
-			sh[i+1] = values[startright];
-			startleft++;
-			startright++;
+		int[] shuffled = new int[values.length];
+		int k =0;
+		for (int j=0; j<(values.length+1)/2; j++){
+			shuffled[k]=values[j];
+			k+=2;
 		}
-		for (int i = 0; i < values.length; i++) {
-			values[i] = sh[i];
+		k=1;
+		for (int j=(values.length+1)/2; j<values.length; j++){
+			shuffled[k]=values[j];
+			k+=2;
+		}
+		for (int z=0; z<values.length; z++){
+			values[z]=shuffled[z];
 		}
 	}
 
@@ -90,13 +82,17 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
-	Random rand = new Random();
-	int iMin = 0;
-	for(int iMax = VALUE_COUNT - 1 ; iMax > 0; iMax--){
-		int iSwap = rand.nextInt(iMax - iMin + 1) + iMin;
-		int hold = values[iMax];
-		values[iMax] = values[iSwap];
-		values[iSwap] = hold;
-	}
+		int j;
+		int [] shuffled = new int[values.length];
+		for (int k=values.length-1; k>0; k--){
+			Random r= new Random();
+			j=r.nextInt(k);
+			int kholder=values[k];
+			values[k]=values[j];
+			values[j]=kholder;
+			
+			
+		}
+		
 	}
 }

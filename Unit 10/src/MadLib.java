@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -15,7 +15,7 @@ import static java.lang.System.*;
 
 public class MadLib
 {
-	private ArrayList<String> verbs;
+	private ArrayList<String> verbs; //arraylist instantiation
 	private ArrayList<String> nouns;
 	private ArrayList<String> adjectives;
 	

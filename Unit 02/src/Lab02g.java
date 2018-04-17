@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -21,7 +21,7 @@ public class Lab02g
 		test.getCelsius();
 		test.print();
 
-		test.setFahrenheit(75.00);
+		test.setFahrenheit(78.00);
 		test.getCelsius();
 		test.print();
 

@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//?A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -10,6 +10,7 @@ public class Lab04d
 {
 	public static void main ( String[] args )
 	{
+		//add test cases
 		Name person = new Name("Sally", "Baker");
 		System.out.println(person.getFirst());
 		System.out.println(person.getLast());
