@@ -37,19 +37,10 @@ public class Ammo extends MovingThing
 
 	public void draw( Graphics window )
 	{
-		window.setColor(Color.YELLOW);
+		window.setColor(Color.RED);
 		window.fillRect(getX(), getY(), 10, 10);
 	}
 	
-	
-	public void move( String direction )
-	{
-		 if(direction.equals("UP"))
-			{
-				setY(getY()-getSpeed());
-			}
-	}
-
 	public String toString()
 	{
 		return super.toString() + getSpeed();

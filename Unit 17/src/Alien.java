@@ -24,72 +24,69 @@ public class Alien extends MovingThing
 
 	public Alien()
 	{
-		this(0,0,30,30,0);
+		this(0,0,0);
 	}
 
 	public Alien(int x, int y)
 	{
-		super(x,y);
+		this(x,y,0);
 	}
 
 	public Alien(int x, int y, int s)
 	{
-		super(x,y);
-		speed =s;
-	}
-
-	public Alien(int x, int y, int w, int h, int s)
-	{
-		super(x, y, w,h);
+		super(x, y);
 		speed=s;
 		try
 		{
-			URL url = getClass().getResource("alien.jpg");
-			image = ImageIO.read(url);
+			image = ImageIO.read(new File("alien.JPG"));
 		}
 		catch(Exception e)
 		{
-			System.out.println("No");
+			//feel free to do something here
+			System.out.println("Retry");
 		}
 	}
 
 	public void setSpeed(int s)
 	{
-		speed =s;
+	   //add code
+		speed = s;
 	}
 
 	public int getSpeed()
 	{
 	   return speed;
 	}
-
-   public void move(String direction)
+	
+	public void move(String direction)
 	{
-	   if(direction.equals("UP"))
-	   {
-		   setY(getY()-getSpeed());
-	   }
-	   if(direction.equals("DOWN"))
-	   {
-		   setY(getY()+getSpeed());
-	   }
-	   if(direction.equals("LEFT"))
-	   {
-		   setX(getX()-getSpeed());
-	   }
-	   if(direction.equals("RIGHT"))
-	   {
-		   setX(getX()+getSpeed());
-	   }
+		if(direction.equals("LEFT"))
+	      setX(getX()-getSpeed());
+		else if(direction.equals("RIGHT"))
+			setX(getX() + getSpeed());
+		else if(direction.equals("UP"))
+			setY(getY() - getSpeed());
+		else if(direction.equals("DOWN"))
+			setY(getY() + getSpeed());
+		
+		if(getX() > 800)
+		{
+			setX(0);
+		}
+		if(getX() < 0)
+		{
+			setX(800);
+		}
+      //add more code to complete the move method
 	}
 
 	public void draw( Graphics window )
 	{
-   	window.drawImage(image,getX(),getY(),getWidth(),getHeight(),null);
+		window.drawImage(image,getX(),getY(),80,80,null);
 	}
 
 	public String toString()
 	{
-		return "";
+		return super.toString() + " " + getSpeed();
 	}
 }
