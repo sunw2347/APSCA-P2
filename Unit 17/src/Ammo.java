@@ -1,3 +1,15 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class - 
+//Lab  -
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.io.File;
+import javax.imageio.ImageIO;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -10,19 +22,19 @@ public class Ammo extends MovingThing
 
 	public Ammo()
 	{
-		this(0,0,0);
+		this(0,0,5);
 	}
 
 	public Ammo(int x, int y)
 	{
-		super(x,y);
+		this(x,y, 5);
 		
 	}
 
 	public Ammo(int x, int y, int s)
 	{
-		super(x,y);
-		speed =s;
+		setPos(x,y);
+		setSpeed(s);
 	}
 
 	public void setSpeed(int s)
@@ -37,10 +49,19 @@ public class Ammo extends MovingThing
 
 	public void draw( Graphics window )
 	{
-		window.setColor(Color.RED);
-		window.fillRect(getX(), getY(), 10, 10);
+		window.setColor(Color.WHITE);
+		window.fillRect(getX(), getY(), 5, 15);
 	}
 	
+	
+	public void move( String direction )
+	{
+		 if(direction.equals("UP"))
+			{
+				setY(getY()-getSpeed());
+			}
+	}
+
 	public String toString()
 	{
 		return super.toString() + getSpeed();

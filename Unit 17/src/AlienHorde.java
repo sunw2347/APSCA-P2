@@ -1,3 +1,9 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date - 
+//Class -
+//Lab  -
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -9,10 +15,14 @@ import java.util.List;
 public class AlienHorde
 {
 	private List<Alien> aliens;
+	private int time;
+	private int size;
 
-	public AlienHorde(int size)
+	public AlienHorde(int s)
 	{
 		aliens = new ArrayList<Alien>();
+		size = s;
+
 	}
 
 	public void add(Alien al)
@@ -22,43 +32,59 @@ public class AlienHorde
 
 	public void drawEmAll( Graphics window )
 	{
-		for(Alien alien : aliens)
-		{
-			alien.draw(window);
-		}
+		for (Alien al : aliens)
+			al.draw(window);
 	}
 
 	public void moveEmAll()
 	{
-		for(Alien alien : aliens)
-		{
-			alien.move("LEFT");
+		time++;
+		for (Alien alien : aliens) {
+			if (time <= 250) {
+				alien.move("LEFT");
+			} else if (time <= 270) {
+				alien.move("DOWN");
+			} else if (time <= 520) {
+				alien.move("RIGHT");
+			} 
+			 else if (time <= 540) {
+					alien.move("DOWN");
+					time=0;
+
+			 }
 		}
 	}
 
 	public void removeDeadOnes(List<Ammo> shots)
 	{
-		for(int i = 0; i < shots.size(); i += 5)
+		for(int i=0;i<shots.size();i++)
 		{
-			for(Alien alien : aliens)
+			for(int j=0;j<aliens.size();j++)
 			{
-				if(shots.get(i).getX() <= alien.getX() + 80 && shots.get(i).getX() >= alien.getX() - 10 && shots.get(i).getY() <= alien.getY() + 75 && shots.get(i).getY() >= alien.getY() -10)
-				{
-					aliens.remove(alien);
-					shots.get(i).setPos(800,0);
+				try {
+					if (shots.get(i).Collide(aliens.get(j))) {
+						shots.remove(i);
+						aliens.remove(j);
+						i--;
+						j--;
+					}
+				} catch (ArrayIndexOutOfBoundsException e) {
+
 				}
 			}
-
 		}
 	}
-	
-	public List<Alien> getList()
-	{
+	public List<Alien> getAliens() {
 		return aliens;
 	}
 
+	public int getSize() {
+		return size;
+	}
 	public String toString()
 	{
-		return aliens.toString();
+		return "";
 	}
+
+	
 }
